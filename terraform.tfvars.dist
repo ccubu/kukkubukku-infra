@@ -1,0 +1,49 @@
+aws_access_key = ""
+
+aws_secret_key = ""
+
+key_name = ""
+
+private_key_path = ""
+
+network_address_space = {
+  Development = "172.31.0.0/16"
+  UAT = "172.32.0.0/16"
+  Production = "172.33.0.0/16"
+}
+
+instance_size = {
+  Development = "t2.nano"
+  UAT = "t2.micro"
+  Production = "t2.small"
+}
+
+web_subnet_count = {
+  Development = 2
+  UAT = 2
+  Production = 3
+}
+
+app_subnet_count = {
+  Development = 2
+  UAT = 2
+  Production = 3
+}
+
+app_instance_count = {
+  Development = 3
+  UAT = 4
+  Production = 6
+}
+
+web_instance_count = {
+  Development = 3
+  UAT = 4
+  Production = 6
+}
+
+db_instance_count = {
+  Development = 1
+  UAT = 2
+  Production = 2
+}
